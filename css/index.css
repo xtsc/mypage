@@ -1,0 +1,542 @@
+@charset "utf-8";
+/*小三角*/
+.triangle {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    width: 12px;
+    height: 6px;
+    transition: transform 0.2s ease-out;
+}
+.triangle s,.triangle em {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.triangle s {
+    top: 0;
+    border: 6px solid transparent;
+    border-top-color: #666;
+}
+.triangle em {
+    top: -1px;
+    left: 1px;
+    border: 5px solid transparent;
+    border-top-color: #F1F1F1;
+}
+/*header start*/
+.header {
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+.area:hover {
+    background: #fff;
+}
+.area:hover .triangle {
+    transform: rotate(180deg);
+}
+.area:hover .triangle em {
+    border-top-color: #fff;
+}
+.send {
+    position: relative;
+    height: 30px;
+    padding: 0 25px 0 10px;
+}
+.header-list li {
+    float: left;
+    padding: 0 10px;
+}
+.header-list .line {
+    margin-top: 9px;
+    padding: 0;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+}
+.header-list .fore {
+    position: relative;
+    padding-right: 25px;
+}
+.header-list .fore:hover .triangle {
+    transform: rotate(180deg);
+}
+.header-list .jd-phone {
+    padding-left: 25px;
+}
+.jd-phone .icon-phone {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    width: 11px;
+    height: 16px;
+    background: url(../images/tel.png) -2px -2px;
+}
+.jd-phone:hover .icon-phone {
+    background-position-y: -27px;
+}
+/*header end*/
+/*top-banner start*/
+.top-banner {
+    text-align: center;
+    background: #33BE30;
+}
+.top-banner .w {
+    position: relative;
+}
+.top-banner .close-img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/close-banner.png);
+}
+.top-banner .close-img:hover {
+    background-position: bottom;
+}
+/*top-banner end*/
+/*search start*/
+.logo {
+    width: 362px;
+    height: 100px;
+}
+.logo h1 {
+    margin-top: 20px;
+    text-indent: -2000em;
+}
+.logo h1 a {
+    display: block;
+    width: 270px;
+    height: 60px;
+    background: url(../images/logo.png);
+}
+.searchbox {
+    padding-top: 25px;
+    height: 36px;
+}
+.searchbox input {
+    float: left;
+    padding-left: 4px;
+    width: 450px;
+    height: 32px;
+    border: 2px solid #B61D1D;
+    border-right: 0;
+    font: 14px/32px "microsoft yahei";
+    color: rgb(153, 153, 153);
+}
+.searchbox button {
+    float: left;
+    width: 82px;
+    height: 36px;
+    background: #B61D1D;
+    color: #fff;
+    font: 16px/36px "微软雅黑";
+    cursor: pointer;
+}
+.shopping-car {
+    position: relative;
+    margin-top: 25px;
+    margin-right: 65px;
+    padding-left: 43px;
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #DFDFDF;
+    background: #F9F9F9;
+}
+.shopping-car .icon-car {
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/tel.png) 0 -59px;
+}
+.shopping-car .icon-more {
+    position: absolute;
+    right: 10px;
+    font: 13px/34px "SimSun";
+}
+.shopping-car .icon-num {
+    position: absolute;
+    top: -5px;
+    width: 16px;
+    height: 14px;
+    line-height: 14px;
+    background: #C81623;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 7px 7px 7px 0;
+    -moz-border-radius: 7px 7px 7px 0;
+    border-radius: 7px 7px 7px 0;
+}
+.search-more {
+    width: 538px;
+    height: 28px;
+    line-height: 28px;
+}
+.search-more a {
+    margin-right: 8px;
+}
+/*search end*/
+/*nav start*/
+.nav {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+}
+.nav-all {
+    width: 210px;
+    height: 44px;
+}
+.nav-all-total {
+    padding-left: 10px;
+    width: 200px;
+    height: 44px;
+    font: 15px/44px "微软雅黑";
+    background: #B1191A;
+}
+.nav-all-total a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.nav-all-detail {
+    position: relative;
+    z-index: 2;
+    margin-top: 2px;
+    width: 209px;
+    height: 465px;
+    background: #C81623;
+    border-left: 1px solid #B1191A;
+    border-bottom: 1px solid #B1191A;
+}
+.nav-all-detail li {
+    *margin-bottom: -3px;
+    padding: 0 10px;
+    height: 31px;
+    color: #fff;
+    *background: #C81623;
+}
+.nav-all-detail li a {
+    float: left;
+    color: #fff;
+    font: 14px/31px "微软雅黑";
+}
+.nav-all-detail li .more {
+    float: right;
+    font: 12px/31px "consolas";
+}
+.nav-all-detail li:hover {
+    background: #fff;
+}
+.nav-all-detail li:hover a {
+    color: #C81623;
+}
+.nav-list {
+    width: 730px;
+    height: 44px;
+}
+.nav-list li {
+    float: left;
+}
+.nav-list li a {
+    display: block;
+    padding: 0 20px;
+    font: 16px/44px "微软雅黑";
+    color: #333;
+}
+.nav-list li a:hover {
+    color: #C81623;
+}
+.nav .pic {
+    margin-top: -10px;
+    margin-right: 50px;
+    width: 200px;
+    height: 54px;
+}
+/*nav end*/
+/*sub-banner start*/
+.sub-banner {
+    position: relative;
+}
+.sub-banner a {
+    position: absolute;
+    width: 100%;
+    height: 644px;
+    background: url(../images/sub-banner.jpg) center center no-repeat;
+}
+/*sub-banner end*/
+/*main start*/
+.main-slider {
+    position: relative;
+    margin-left: 220px;
+    margin-top: 12px;
+    width: 730px;
+    height: 454px;
+}
+.btn-box .btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 28px;
+    height: 62px;
+    text-align: center;
+    font: 22px/62px "SimSun", "宋体";
+    color: #fff;
+    background: #000;
+    opacity: .3;
+    filter:alpha(opacity=30);
+}
+.btn-box .prev {
+    left: 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+}
+.btn-box .next {
+    right: 0;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+}
+.btn-box .btn:hover {
+    opacity: .7;
+    filter:alpha(opacity=70);
+}
+.list-index {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -66px;
+}
+.list-index li {
+    float: left;
+    margin: 0 2px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    background: #3E3E3E;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.list-index .cur {
+    background: #B61B1F;
+}
+.main-news {
+    position: relative;
+    margin-top: 12px;
+    width: 250px;
+    height: 454px;
+    overflow: hidden;
+}
+.main-news-content {
+    margin-bottom: 5px;
+    width: 248px;
+    height: 372px;
+    border: 1px solid #E4E4E4;
+}
+.main-news-content-txt {
+    height: 163px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.main-news-content-txt-title {
+    padding: 0 15px;
+    height: 32px;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.main-news-content-txt-title h3 {
+    float: left;
+    font: 16px/32px "微软雅黑";
+}
+.main-news-content-txt-title a {
+    float: right;
+    font: 12px/32px "consolas";
+}
+.main-news-content-txt-list {
+    margin-top: 5px;
+}
+.main-news-content-txt-list li {
+    padding-left: 15px;
+    line-height: 24px;
+}
+.main-news-content-txt-list li strong {
+    padding-right: 5px;
+}
+.main-news-content-icon {
+    width: 260px;
+}
+.icon-list li {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    padding-top: 39px;
+    width: 62px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #E8E8E7;
+    border-top: 0;
+}
+.icon-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.icon-list li a i {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/fly.png) no-repeat;
+    -ms-background-position-x: 0;
+    background-position-x: 0;
+}
+.icon-list li a .icon2 {
+     background-position-y: -25px;
+ }
+.icon-list li a .icon3 {
+    background-position-y: -50px;
+}
+.icon-list li a .icon4 {
+    background-position-y: -75px;
+}
+.icon-list li a .icon5 {
+    background-position-y: -100px;
+}
+.icon-list li a .icon6 {
+    background-position-y: -125px;
+}
+.icon-list li a .icon7 {
+    background-position-y: -150px;
+}
+.icon-list li a .icon8 {
+    background-position-y: -175px;
+}
+.icon-list li a .icon9 {
+    background-position-y: -200px;
+}
+.icon-list li a .icon10 {
+    background-position-y: -225px;
+}
+.icon-list li a .icon11 {
+    background-position-y: -250px;
+}
+.icon-list li a .icon12 {
+    background-position-y: -275px;
+}
+.icon-list img {
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+.icon-list .four img {
+    right: 3px;
+}
+/*main end*/
+/*today start*/
+.today {
+    position: relative;
+    margin: 10px auto 20px;
+    height: 164px;
+    overflow: hidden;
+}
+.today-tuijain {
+    width: 210px;
+    height: 151px;
+}
+.today-tuijain a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/today.png) left bottom no-repeat;
+}
+.today-pics {
+    position: relative;
+    width: 1000px;
+    height: 164px;
+}
+.pics-list {
+    width: 450%;
+}
+.pics-list li {
+    float: left;
+    width: 250px;
+    height: 164px;
+    margin-right: 1px;
+}
+/*today end*/
+/*footer start*/
+.footer-slogen {
+    position: relative;
+    height: 94px;
+    background: #F5F5F5;
+}
+.footer-slogen span {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+}
+.footer-slogen .slogen1 {
+    margin-left: -604px;
+}
+.footer-slogen .slogen2 {
+    margin-left: -302px;
+}
+.footer-slogen .slogen4 {
+    margin-left: 302px;
+}
+.footer-shopping {
+    padding: 16px 0 20px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+.dl-list {
+    float: left;
+    width: 200px;
+}
+.dl-list dt,.coverage h3 {
+    font: 16px/34px "微软雅黑";
+}
+.dl-list dd {
+    line-height: 20px;
+}
+.dl-list-last {
+    width: 100px;
+}
+.coverage {
+    margin-right: 60px;
+    padding-left: 17px;
+    width: 186px;
+    height: 169px;
+    background: url(../images/china.png) left bottom no-repeat;
+}
+.coverage p {
+    margin-top: 8px;
+}
+.coverage a {
+    float: right;
+}
+.footer-bottom {
+    text-align: center;
+}
+.footer-bottom .link {
+    margin: 15px auto 5px;
+}
+.footer-bottom .link a {
+    line-height: 28px;
+    margin: 0 10px;
+}
+.footer-bottom .pic-box {
+    padding: 10px 0 30px;
+}
+.footer-bottom .pic-box a {
+    margin: 0 5px;
+}
+/*footer end*/
